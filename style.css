@@ -138,6 +138,10 @@ main{
     flex-grow: 1;
 }
 
+.activity-card-work--content:hover, .activity-card-play--content:hover, .activity-card-study--content:hover, .activity-card-exercise--content:hover, .activity-card-social--content:hover, .activity-card-self-care--content:hover{
+    background-color: var(--navy-800);
+}
+
 .activity-card-work--header, .activity-card-play--header, .activity-card-study--header, .activity-card-exercise--header, .activity-card-social--header, .activity-card-self-care--header{
     display: flex;
     flex-direction: row;
