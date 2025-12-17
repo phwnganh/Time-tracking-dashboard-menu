@@ -48,4 +48,128 @@
 body{
     font-family: var(--font-primary);
     background-color: var(--navy-950);
+    max-width: 1116px;
+    margin: 0 auto;
+    color: white;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.activity-card{
+    border-radius: 15px;
+    /*background-color: var(--navy-900);*/
+}
+
+.profile-card{
+    grid-area: 1/1/3/2;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--navy-900);
+}
+
+.profile-card--info{
+    background-color: var(--purple-600);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    border-radius: 15px;
+    padding: 32px 0 92px 32px;
+}
+
+.profile-card--avatar img{
+    width: 78px;
+    height: 78px;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+.profile-card--name p{
+    color: var(--navy-200);
+}
+
+.profile-card--menu{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    padding: 28px 0 0 32px;
+    color: var(--purple-500);
+}
+
+.activity-card--work, .activity-card--play, .activity-card--study, .activity-card--exercise, .activity-card--social, .activity-card--self-care{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.activity-card--icon{
+    display: flex;
+    justify-content: end;
+    overflow: hidden;
+    height: 80px;
+}
+
+.activity-card-work--icon{
+    background-color: var(--orange-300);
+}
+
+
+.activity-card-work--content, .activity-card-play--content, .activity-card-study--content, .activity-card-exercise--content, .activity-card-social--content, .activity-card-self-care--content{
+    background-color: var(--navy-900);
+    padding: 32px;
+    margin-top: -20px;
+    border-radius: 15px;
+    flex-grow: 1;
+}
+
+.activity-card-work--header, .activity-card-play--header, .activity-card-study--header, .activity-card-exercise--header, .activity-card-social--header, .activity-card-self-care--header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.activity-card-work--menu{
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+}
+
+.activity-card--current{
+    margin-top: 24px;
+}
+
+.activity-card--previous{
+    margin-top: 8px;
+    color: var(--navy-200)
+}
+
+.activity-card-play--icon{
+    background-color: #55C2E6;
+}
+
+.activity-card-study--icon{
+    background-color: #FF5E7D;
+}
+
+.activity-card-exercise--icon{
+    background-color: #4BCF82;
+}
+
+.activity-card-social--icon{
+    background-color: #7335D2;
+}
+
+.activity-card-self-care--icon{
+    background-color: #F1C75B;
 }
