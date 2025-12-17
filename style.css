@@ -173,3 +173,27 @@ main{
 .activity-card-self-care--icon{
     background-color: #F1C75B;
 }
+
+@media (max-width: 768px) {
+    .container{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
+    .profile-card--info{
+        flex-direction: row;
+        align-items: center;
+        gap: 24px;
+        padding: 32px 0 32px 32px;
+    }
+
+    .profile-card--menu{
+        flex-direction: row;
+        justify-content: center;
+        gap: 8px;
+        padding: 24px 0;
+    }
+
+    .profile-card{
+        grid-area: 1/1/2/4;
+    }
+}
