@@ -15,7 +15,10 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+    <script src="main.js" defer></script>
+
 </head>
+
 <body>
 
 <main>
@@ -31,12 +34,12 @@
                 </div>
             </div>
             <ul class="profile-card--menu">
-                <li class="text-preset-5-regular">Daily</li>
-                <li class="text-preset-5-regular">Weekly</li>
-                <li class="text-preset-5-regular">Monthly</li>
+                <li class="text-preset-5-regular" data-period="daily">Daily</li>
+                <li class="text-preset-5-regular active" data-period="weekly">Weekly</li>
+                <li class="text-preset-5-regular" data-period="monthly">Monthly</li>
             </ul>
         </section>
-        <section class="activity-card activity-card--work">
+        <section class="activity-card activity-card--work" data-title="Work">
             <div class="activity-card--icon activity-card-work--icon">
                 <img src="images/icon-work.svg" alt="work-icon">
             </div>
@@ -48,12 +51,12 @@
                     </div>
                 </header>
                 <div class="activity-card--time">
-                    <p class="activity-card--current">32hrs</p>
-                    <p class="activity-card--previous text-preset-6">Last Week - 36hrs</p>
+                    <p class="activity-card--current"></p>
+                    <p class="activity-card--previous text-preset-6"></p>
                 </div>
             </div>
         </section>
-        <section class="activity-card activity-card--play">
+        <section class="activity-card activity-card--play" data-title="Play">
             <div class="activity-card--icon activity-card-play--icon">
                 <img src="images/icon-play.svg" alt="play-icon">
             </div>
@@ -65,12 +68,12 @@
                     </div>
                 </header>
                 <div class="activity-card--time">
-                    <p class="activity-card--current">10hrs</p>
-                    <p class="activity-card--previous text-preset-6">Last Week - 8hrs</p>
+                    <p class="activity-card--current"></p>
+                    <p class="activity-card--previous text-preset-6"></p>
                 </div>
             </div>
         </section>
-        <section class="activity-card activity-card--study">
+        <section class="activity-card activity-card--study" data-title="Study">
             <div class="activity-card--icon activity-card-study--icon">
                 <img src="images/icon-study.svg" alt="study-icon">
             </div>
@@ -82,12 +85,12 @@
                     </div>
                 </header>
                 <div class="activity-card--time">
-                    <p class="activity-card--current">12hrs</p>
-                    <p class="activity-card--previous text-preset-6">Last Week - 24hrs</p>
+                    <p class="activity-card--current"></p>
+                    <p class="activity-card--previous text-preset-6"></p>
                 </div>
             </div>
         </section>
-        <section class="activity-card activity-card--exercise">
+        <section class="activity-card activity-card--exercise" data-title="Exercise">
             <div class="activity-card--icon activity-card-exercise--icon">
                 <img src="images/icon-exercise.svg" alt="exercise-icon">
             </div>
@@ -99,12 +102,12 @@
                     </div>
                 </header>
                 <div class="activity-card--time">
-                    <p class="activity-card--current">4hrs</p>
-                    <p class="activity-card--previous text-preset-6">Last Week - 5hrs</p>
+                    <p class="activity-card--current"></p>
+                    <p class="activity-card--previous text-preset-6"></p>
                 </div>
             </div>
         </section>
-        <section class="activity-card activity-card--social">
+        <section class="activity-card activity-card--social" data-title="Social">
             <div class="activity-card--icon activity-card-social--icon">
                 <img src="images/icon-social.svg" alt="social-icon">
             </div>
@@ -116,12 +119,12 @@
                     </div>
                 </header>
                 <div class="activity-card--time">
-                    <p class="activity-card--current">11hrs</p>
-                    <p class="activity-card--previous text-preset-6">Last Week - 11hrs</p>
+                    <p class="activity-card--current"></p>
+                    <p class="activity-card--previous text-preset-6"></p>
                 </div>
             </div>
         </section>
-        <section class="activity-card activity-card--self-care">
+        <section class="activity-card activity-card--self-care" data-title="Self Care">
             <div class="activity-card--icon activity-card-self-care--icon">
                 <img src="images/icon-self-care.svg" alt="self-care-icon">
             </div>
@@ -133,14 +136,13 @@
                     </div>
                 </header>
                 <div class="activity-card--time">
-                    <p class="activity-card--current">12hrs</p>
-                    <p class="activity-card--previous text-preset-6">Last Week - 12hrs</p>
+                    <p class="activity-card--current"></p>
+                    <p class="activity-card--previous text-preset-6"></p>
                 </div>
             </div>
         </section>
     </div>
 
 </main>
-    
 </body>
 </html>

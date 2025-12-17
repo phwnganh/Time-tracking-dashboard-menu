@@ -109,7 +109,15 @@ main{
     flex-direction: column;
     gap: 21px;
     padding: 28px 0 0 32px;
+}
+
+.profile-card--menu li{
     color: var(--purple-500);
+    cursor: pointer;
+}
+
+.profile-card--menu li.active{
+    color: white;
 }
 
 .activity-card--work, .activity-card--play, .activity-card--study, .activity-card--exercise, .activity-card--social, .activity-card--self-care{
